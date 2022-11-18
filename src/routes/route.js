@@ -3,7 +3,7 @@ const express = require("express");
 const router = express.Router();
 const userController = require("../controllers/userController");
 const middleware = require("../middleware/auth");
-
+// hello bhuvnesh
 router.post("/users", userController.createUser);
 
 router.post("/login", middleware, userController.loginUser);
